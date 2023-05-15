@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+
+
+/* body style starts */
+body {
+    background: #DDC5AC;
+}
+/* body style ends */
+
+
+/* about style starts */
+.about {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 12%;
+}
+
+.about-content {
+    max-width: 610px;
+}
+
+/* h1 style */
+.about-content h1 {
+    font-size: 55px;
+    font-weight: 750;
+    line-height: 1.2;
+}
+
+/* h3 style */
+.about-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* paragraph stlye */
+.about-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+/* button style start */
+.about-content .btn-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 50px;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: cadetblue;
+    border: 2px solid rgb(56, 40, 25);
+    border-radius: 25px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:nth-child(1) {
+    background: transparent;
+    color: #081b29;
+}
+
+.btn-box a:nth-child(1)::before {
+    background: rgb(43, 23, 23);
+}
+
+.btn-box a:nth-child(1):hover {
+    color: #5f4d43;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(48, 39, 27);
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+/* button style end */
+
+.coffeepic {
+    width: 100%;
+    height: 100%;
+}
